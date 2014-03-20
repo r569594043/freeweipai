@@ -29,6 +29,7 @@ headers = {
 	'Referer': 'http://www.weipai.cn/',
 	'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36',
 	# 'Cookie': 'weipai_token=mkom5ducaibsqdrs687qcu5tf4'
+	# 'Cookie': 'weipai_token=0cp1ddfbei8k2l8ev2cf35olb7'
 	'Cookie': 'weipai_token=0cp1ddfbei8k2l8ev2cf35olb7'
 }
 
@@ -47,7 +48,10 @@ def analysis_video_list_info(bs_doc):
 			like = video_info_doc.select('.wrap .details .details-like')[0].text
 			view = video_info_doc.select('.wrap .details .details-view')[0].text
 			comment = video_info_doc.select('.wrap .details .details-comment')[0].text
-			desc = video_info_doc.select('.wrap .desc')[0].text
+			desc = None
+			desc_doc = video_info_doc.select('.wrap .desc')
+			if len(desc_doc) > 0:
+				desc = desc_doc[0].text
 			date = date + '-' + day
 			like = int(like)
 			view = int(view)
@@ -74,7 +78,10 @@ def get_user_info(id):
 	user_info_box = bs_doc.select('#container_div #full_column_div .wf_container .info')
 	if len(user_info_box) > 0:
 		user_info_box = user_info_box[0]
-		face = user_info_box.select('.wrap .imgs .face img')[0].get('src')
+		face = None
+		face_doc = user_info_box.select('.wrap .imgs .face img')
+		if len(face_doc) > 0:
+			face = face_doc[0].get('src')
 		name = user_info_box.select('.wrap .user .name')[0].text
 		sex = 'female' if 'female' in user_info_box.select('.sex')[0].get('class') else 'male'
 		follows = user_info_box.select('.wrap .follows span')[0].text
@@ -106,7 +113,10 @@ def get_videos_info(id):
 	user_info_box = bs_doc.select('#container_div #full_column_div .wf_container .info')
 	if len(user_info_box) > 0:
 		user_info_box = user_info_box[0]
-		face = user_info_box.select('.wrap .imgs .face img')[0].get('src')
+		face = None
+		face_doc = user_info_box.select('.wrap .imgs .face img')
+		if len(face_doc) > 0:
+			face = face_doc[0].get('src')
 		name = user_info_box.select('.wrap .user .name')[0].text
 		sex = 'female' if 'female' in user_info_box.select('.sex')[0].get('class') else 'male'
 		follows = user_info_box.select('.wrap .follows span')[0].text
@@ -139,7 +149,10 @@ def get_video_info(id):
 	user_info_box = bs_doc.select('.theater .theater-wrapper .left_div .info')
 	if len(user_info_box) > 0:
 		user_info_box = user_info_box[0]
-		face = user_info_box.select('.wrap .imgs .face img')[0].get('src')
+		face = None
+		face_doc = user_info_box.select('.wrap .imgs .face img')
+		if len(face_doc) > 0:
+			face = face_doc[0].get('src')
 		name = user_info_box.select('.wrap .user .name')[0].text
 		sex = 'female' if 'female' in user_info_box.select('.sex')[0].get('class') else 'male'
 		follows = user_info_box.select('.wrap .follows span')[0].text
