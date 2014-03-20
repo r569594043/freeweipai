@@ -1,0 +1,952 @@
+2014-03-20 15:54:30 [weipai] [INFO] [main.py:57] - start capture...
+2014-03-20 15:57:05 [weipai] [INFO] [main.py:81] - end capture...
+2014-03-20 16:11:31 [weipai] [INFO] [main.py:57] - start capture...
+2014-03-20 16:16:10 [weipai] [ERROR] [main.py:74] - error during get user videos: 50ed810c8034945646000077
+Traceback (most recent call last):
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1248, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1061, in request
+    self._send_request(method, url, body, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1099, in _send_request
+    self.endheaders(body)
+  File "D:\Environment\Python33\lib\http\client.py", line 1057, in endheaders
+    self._send_output(message_body)
+  File "D:\Environment\Python33\lib\http\client.py", line 902, in _send_output
+    self.send(msg)
+  File "D:\Environment\Python33\lib\http\client.py", line 840, in send
+    self.connect()
+  File "D:\Environment\Python33\lib\http\client.py", line 818, in connect
+    self.timeout, self.source_address)
+  File "D:\Environment\Python33\lib\socket.py", line 435, in create_connection
+    raise err
+  File "D:\Environment\Python33\lib\socket.py", line 426, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 71, in main
+    capture(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 18, in capture
+    user = weipai_api.get_user_info(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\weipai_api.py", line 75, in get_user_info
+    resp = urllib.request.urlopen(req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 156, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 469, in open
+    response = self._open(req, data)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 487, in _open
+    '_open', req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 447, in _call_chain
+    result = func(*args)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1268, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1251, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
+2014-03-20 16:16:58 [weipai] [INFO] [main.py:81] - end capture...
+2014-03-20 16:17:03 [weipai] [INFO] [main.py:57] - start capture...
+2014-03-20 16:29:41 [weipai] [INFO] [main.py:81] - end capture...
+2014-03-20 16:31:41 [weipai] [INFO] [main.py:57] - start capture...
+2014-03-20 16:33:50 [weipai] [INFO] [main.py:81] - end capture...
+2014-03-20 16:35:50 [weipai] [INFO] [main.py:57] - start capture...
+2014-03-20 16:37:55 [weipai] [INFO] [main.py:81] - end capture...
+2014-03-20 16:39:55 [weipai] [INFO] [main.py:57] - start capture...
+2014-03-20 16:42:01 [weipai] [INFO] [main.py:81] - end capture...
+2014-03-20 16:44:01 [weipai] [INFO] [main.py:57] - start capture...
+2014-03-20 17:03:03 [weipai] [INFO] [main.py:81] - end capture...
+2014-03-20 17:05:03 [weipai] [INFO] [main.py:57] - start capture...
+2014-03-20 17:07:02 [weipai] [ERROR] [main.py:74] - error during get user videos: 51d3b6907f34943812000001
+Traceback (most recent call last):
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1248, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1061, in request
+    self._send_request(method, url, body, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1099, in _send_request
+    self.endheaders(body)
+  File "D:\Environment\Python33\lib\http\client.py", line 1057, in endheaders
+    self._send_output(message_body)
+  File "D:\Environment\Python33\lib\http\client.py", line 902, in _send_output
+    self.send(msg)
+  File "D:\Environment\Python33\lib\http\client.py", line 840, in send
+    self.connect()
+  File "D:\Environment\Python33\lib\http\client.py", line 818, in connect
+    self.timeout, self.source_address)
+  File "D:\Environment\Python33\lib\socket.py", line 435, in create_connection
+    raise err
+  File "D:\Environment\Python33\lib\socket.py", line 426, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 71, in main
+    capture(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 18, in capture
+    user = weipai_api.get_user_info(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\weipai_api.py", line 75, in get_user_info
+    resp = urllib.request.urlopen(req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 156, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 469, in open
+    response = self._open(req, data)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 487, in _open
+    '_open', req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 447, in _call_chain
+    result = func(*args)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1268, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1251, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
+2014-03-20 17:07:09 [weipai] [INFO] [main.py:81] - end capture...
+2014-03-20 17:09:09 [weipai] [INFO] [main.py:57] - start capture...
+2014-03-20 17:11:15 [weipai] [ERROR] [main.py:74] - error during get user videos: 52d5b8acc58a87a45aa1e64c
+Traceback (most recent call last):
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1248, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1061, in request
+    self._send_request(method, url, body, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1099, in _send_request
+    self.endheaders(body)
+  File "D:\Environment\Python33\lib\http\client.py", line 1057, in endheaders
+    self._send_output(message_body)
+  File "D:\Environment\Python33\lib\http\client.py", line 902, in _send_output
+    self.send(msg)
+  File "D:\Environment\Python33\lib\http\client.py", line 840, in send
+    self.connect()
+  File "D:\Environment\Python33\lib\http\client.py", line 818, in connect
+    self.timeout, self.source_address)
+  File "D:\Environment\Python33\lib\socket.py", line 435, in create_connection
+    raise err
+  File "D:\Environment\Python33\lib\socket.py", line 426, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 71, in main
+    capture(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 18, in capture
+    user = weipai_api.get_user_info(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\weipai_api.py", line 75, in get_user_info
+    resp = urllib.request.urlopen(req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 156, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 469, in open
+    response = self._open(req, data)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 487, in _open
+    '_open', req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 447, in _call_chain
+    result = func(*args)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1268, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1251, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
+2014-03-20 17:11:37 [weipai] [ERROR] [main.py:74] - error during get user videos: 530767ed4e4a13bc248b4675
+Traceback (most recent call last):
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1248, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1061, in request
+    self._send_request(method, url, body, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1099, in _send_request
+    self.endheaders(body)
+  File "D:\Environment\Python33\lib\http\client.py", line 1057, in endheaders
+    self._send_output(message_body)
+  File "D:\Environment\Python33\lib\http\client.py", line 902, in _send_output
+    self.send(msg)
+  File "D:\Environment\Python33\lib\http\client.py", line 840, in send
+    self.connect()
+  File "D:\Environment\Python33\lib\http\client.py", line 818, in connect
+    self.timeout, self.source_address)
+  File "D:\Environment\Python33\lib\socket.py", line 435, in create_connection
+    raise err
+  File "D:\Environment\Python33\lib\socket.py", line 426, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 71, in main
+    capture(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 18, in capture
+    user = weipai_api.get_user_info(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\weipai_api.py", line 75, in get_user_info
+    resp = urllib.request.urlopen(req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 156, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 469, in open
+    response = self._open(req, data)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 487, in _open
+    '_open', req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 447, in _call_chain
+    result = func(*args)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1268, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1251, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
+2014-03-20 17:13:00 [weipai] [INFO] [main.py:81] - end capture...
+2014-03-20 17:15:00 [weipai] [INFO] [main.py:57] - start capture...
+2014-03-20 17:24:11 [weipai] [INFO] [main.py:81] - end capture...
+2014-03-20 17:26:11 [weipai] [INFO] [main.py:57] - start capture...
+2014-03-20 17:31:22 [weipai] [INFO] [main.py:57] - start capture...
+2014-03-20 17:41:23 [weipai] [INFO] [main.py:57] - start capture...
+2014-03-20 17:43:16 [weipai] [INFO] [main.py:81] - end capture...
+2014-03-20 17:45:16 [weipai] [INFO] [main.py:57] - start capture...
+2014-03-20 17:48:14 [weipai] [INFO] [main.py:81] - end capture...
+2014-03-20 17:50:14 [weipai] [INFO] [main.py:57] - start capture...
+2014-03-20 17:51:58 [weipai] [ERROR] [main.py:74] - error during get user videos: 53045c799d67d9a7158b457b
+Traceback (most recent call last):
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1248, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1061, in request
+    self._send_request(method, url, body, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1099, in _send_request
+    self.endheaders(body)
+  File "D:\Environment\Python33\lib\http\client.py", line 1057, in endheaders
+    self._send_output(message_body)
+  File "D:\Environment\Python33\lib\http\client.py", line 902, in _send_output
+    self.send(msg)
+  File "D:\Environment\Python33\lib\http\client.py", line 840, in send
+    self.connect()
+  File "D:\Environment\Python33\lib\http\client.py", line 818, in connect
+    self.timeout, self.source_address)
+  File "D:\Environment\Python33\lib\socket.py", line 435, in create_connection
+    raise err
+  File "D:\Environment\Python33\lib\socket.py", line 426, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 71, in main
+    capture(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 18, in capture
+    user = weipai_api.get_user_info(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\weipai_api.py", line 75, in get_user_info
+    resp = urllib.request.urlopen(req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 156, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 469, in open
+    response = self._open(req, data)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 487, in _open
+    '_open', req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 447, in _call_chain
+    result = func(*args)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1268, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1251, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
+2014-03-20 17:52:23 [weipai] [ERROR] [main.py:74] - error during get user videos: 523316f95e7feb92458b4626
+Traceback (most recent call last):
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1248, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1061, in request
+    self._send_request(method, url, body, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1099, in _send_request
+    self.endheaders(body)
+  File "D:\Environment\Python33\lib\http\client.py", line 1057, in endheaders
+    self._send_output(message_body)
+  File "D:\Environment\Python33\lib\http\client.py", line 902, in _send_output
+    self.send(msg)
+  File "D:\Environment\Python33\lib\http\client.py", line 840, in send
+    self.connect()
+  File "D:\Environment\Python33\lib\http\client.py", line 818, in connect
+    self.timeout, self.source_address)
+  File "D:\Environment\Python33\lib\socket.py", line 435, in create_connection
+    raise err
+  File "D:\Environment\Python33\lib\socket.py", line 426, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 71, in main
+    capture(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 18, in capture
+    user = weipai_api.get_user_info(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\weipai_api.py", line 75, in get_user_info
+    resp = urllib.request.urlopen(req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 156, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 469, in open
+    response = self._open(req, data)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 487, in _open
+    '_open', req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 447, in _call_chain
+    result = func(*args)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1268, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1251, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
+2014-03-20 17:52:24 [weipai] [ERROR] [main.py:74] - error during get user videos: 530c13079d67d97e048b4569
+Traceback (most recent call last):
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1248, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1061, in request
+    self._send_request(method, url, body, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1099, in _send_request
+    self.endheaders(body)
+  File "D:\Environment\Python33\lib\http\client.py", line 1057, in endheaders
+    self._send_output(message_body)
+  File "D:\Environment\Python33\lib\http\client.py", line 902, in _send_output
+    self.send(msg)
+  File "D:\Environment\Python33\lib\http\client.py", line 840, in send
+    self.connect()
+  File "D:\Environment\Python33\lib\http\client.py", line 818, in connect
+    self.timeout, self.source_address)
+  File "D:\Environment\Python33\lib\socket.py", line 435, in create_connection
+    raise err
+  File "D:\Environment\Python33\lib\socket.py", line 426, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 71, in main
+    capture(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 18, in capture
+    user = weipai_api.get_user_info(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\weipai_api.py", line 75, in get_user_info
+    resp = urllib.request.urlopen(req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 156, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 469, in open
+    response = self._open(req, data)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 487, in _open
+    '_open', req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 447, in _call_chain
+    result = func(*args)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1268, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1251, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>
+2014-03-20 17:52:25 [weipai] [ERROR] [main.py:74] - error during get user videos: 530c1ac69d67d9470c8b4568
+Traceback (most recent call last):
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1248, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1061, in request
+    self._send_request(method, url, body, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1099, in _send_request
+    self.endheaders(body)
+  File "D:\Environment\Python33\lib\http\client.py", line 1057, in endheaders
+    self._send_output(message_body)
+  File "D:\Environment\Python33\lib\http\client.py", line 902, in _send_output
+    self.send(msg)
+  File "D:\Environment\Python33\lib\http\client.py", line 840, in send
+    self.connect()
+  File "D:\Environment\Python33\lib\http\client.py", line 818, in connect
+    self.timeout, self.source_address)
+  File "D:\Environment\Python33\lib\socket.py", line 435, in create_connection
+    raise err
+  File "D:\Environment\Python33\lib\socket.py", line 426, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 71, in main
+    capture(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 18, in capture
+    user = weipai_api.get_user_info(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\weipai_api.py", line 75, in get_user_info
+    resp = urllib.request.urlopen(req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 156, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 469, in open
+    response = self._open(req, data)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 487, in _open
+    '_open', req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 447, in _call_chain
+    result = func(*args)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1268, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1251, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>
+2014-03-20 17:52:26 [weipai] [ERROR] [main.py:74] - error during get user videos: 52e3d0b379d3cc0d318b458d
+Traceback (most recent call last):
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1248, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1061, in request
+    self._send_request(method, url, body, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1099, in _send_request
+    self.endheaders(body)
+  File "D:\Environment\Python33\lib\http\client.py", line 1057, in endheaders
+    self._send_output(message_body)
+  File "D:\Environment\Python33\lib\http\client.py", line 902, in _send_output
+    self.send(msg)
+  File "D:\Environment\Python33\lib\http\client.py", line 840, in send
+    self.connect()
+  File "D:\Environment\Python33\lib\http\client.py", line 818, in connect
+    self.timeout, self.source_address)
+  File "D:\Environment\Python33\lib\socket.py", line 435, in create_connection
+    raise err
+  File "D:\Environment\Python33\lib\socket.py", line 426, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 71, in main
+    capture(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 18, in capture
+    user = weipai_api.get_user_info(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\weipai_api.py", line 75, in get_user_info
+    resp = urllib.request.urlopen(req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 156, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 469, in open
+    response = self._open(req, data)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 487, in _open
+    '_open', req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 447, in _call_chain
+    result = func(*args)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1268, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1251, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>
+2014-03-20 17:52:27 [weipai] [ERROR] [main.py:74] - error during get user videos: 51f0f3458134944311000029
+Traceback (most recent call last):
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1248, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1061, in request
+    self._send_request(method, url, body, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1099, in _send_request
+    self.endheaders(body)
+  File "D:\Environment\Python33\lib\http\client.py", line 1057, in endheaders
+    self._send_output(message_body)
+  File "D:\Environment\Python33\lib\http\client.py", line 902, in _send_output
+    self.send(msg)
+  File "D:\Environment\Python33\lib\http\client.py", line 840, in send
+    self.connect()
+  File "D:\Environment\Python33\lib\http\client.py", line 818, in connect
+    self.timeout, self.source_address)
+  File "D:\Environment\Python33\lib\socket.py", line 435, in create_connection
+    raise err
+  File "D:\Environment\Python33\lib\socket.py", line 426, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 71, in main
+    capture(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 18, in capture
+    user = weipai_api.get_user_info(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\weipai_api.py", line 75, in get_user_info
+    resp = urllib.request.urlopen(req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 156, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 469, in open
+    response = self._open(req, data)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 487, in _open
+    '_open', req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 447, in _call_chain
+    result = func(*args)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1268, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1251, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>
+2014-03-20 17:52:28 [weipai] [ERROR] [main.py:74] - error during get user videos: 5302b3e4ebeddb6d698b45c5
+Traceback (most recent call last):
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1248, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1061, in request
+    self._send_request(method, url, body, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1099, in _send_request
+    self.endheaders(body)
+  File "D:\Environment\Python33\lib\http\client.py", line 1057, in endheaders
+    self._send_output(message_body)
+  File "D:\Environment\Python33\lib\http\client.py", line 902, in _send_output
+    self.send(msg)
+  File "D:\Environment\Python33\lib\http\client.py", line 840, in send
+    self.connect()
+  File "D:\Environment\Python33\lib\http\client.py", line 818, in connect
+    self.timeout, self.source_address)
+  File "D:\Environment\Python33\lib\socket.py", line 435, in create_connection
+    raise err
+  File "D:\Environment\Python33\lib\socket.py", line 426, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 71, in main
+    capture(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 18, in capture
+    user = weipai_api.get_user_info(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\weipai_api.py", line 75, in get_user_info
+    resp = urllib.request.urlopen(req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 156, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 469, in open
+    response = self._open(req, data)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 487, in _open
+    '_open', req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 447, in _call_chain
+    result = func(*args)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1268, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1251, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>
+2014-03-20 17:52:29 [weipai] [ERROR] [main.py:74] - error during get user videos: 52fcdcc39d67d9ca018b4567
+Traceback (most recent call last):
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1248, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1061, in request
+    self._send_request(method, url, body, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1099, in _send_request
+    self.endheaders(body)
+  File "D:\Environment\Python33\lib\http\client.py", line 1057, in endheaders
+    self._send_output(message_body)
+  File "D:\Environment\Python33\lib\http\client.py", line 902, in _send_output
+    self.send(msg)
+  File "D:\Environment\Python33\lib\http\client.py", line 840, in send
+    self.connect()
+  File "D:\Environment\Python33\lib\http\client.py", line 818, in connect
+    self.timeout, self.source_address)
+  File "D:\Environment\Python33\lib\socket.py", line 435, in create_connection
+    raise err
+  File "D:\Environment\Python33\lib\socket.py", line 426, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 71, in main
+    capture(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 18, in capture
+    user = weipai_api.get_user_info(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\weipai_api.py", line 75, in get_user_info
+    resp = urllib.request.urlopen(req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 156, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 469, in open
+    response = self._open(req, data)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 487, in _open
+    '_open', req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 447, in _call_chain
+    result = func(*args)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1268, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1251, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>
+2014-03-20 17:52:43 [weipai] [ERROR] [main.py:74] - error during get user videos: 50aef9e97f34942d0c00000d
+Traceback (most recent call last):
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1248, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1061, in request
+    self._send_request(method, url, body, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1099, in _send_request
+    self.endheaders(body)
+  File "D:\Environment\Python33\lib\http\client.py", line 1057, in endheaders
+    self._send_output(message_body)
+  File "D:\Environment\Python33\lib\http\client.py", line 902, in _send_output
+    self.send(msg)
+  File "D:\Environment\Python33\lib\http\client.py", line 840, in send
+    self.connect()
+  File "D:\Environment\Python33\lib\http\client.py", line 818, in connect
+    self.timeout, self.source_address)
+  File "D:\Environment\Python33\lib\socket.py", line 435, in create_connection
+    raise err
+  File "D:\Environment\Python33\lib\socket.py", line 426, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 71, in main
+    capture(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 18, in capture
+    user = weipai_api.get_user_info(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\weipai_api.py", line 75, in get_user_info
+    resp = urllib.request.urlopen(req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 156, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 469, in open
+    response = self._open(req, data)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 487, in _open
+    '_open', req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 447, in _call_chain
+    result = func(*args)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1268, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1251, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
+2014-03-20 17:52:44 [weipai] [ERROR] [main.py:74] - error during get user videos: 522e68219f6c0097605f6c66
+Traceback (most recent call last):
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1248, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1061, in request
+    self._send_request(method, url, body, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1099, in _send_request
+    self.endheaders(body)
+  File "D:\Environment\Python33\lib\http\client.py", line 1057, in endheaders
+    self._send_output(message_body)
+  File "D:\Environment\Python33\lib\http\client.py", line 902, in _send_output
+    self.send(msg)
+  File "D:\Environment\Python33\lib\http\client.py", line 840, in send
+    self.connect()
+  File "D:\Environment\Python33\lib\http\client.py", line 818, in connect
+    self.timeout, self.source_address)
+  File "D:\Environment\Python33\lib\socket.py", line 435, in create_connection
+    raise err
+  File "D:\Environment\Python33\lib\socket.py", line 426, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 71, in main
+    capture(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 18, in capture
+    user = weipai_api.get_user_info(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\weipai_api.py", line 75, in get_user_info
+    resp = urllib.request.urlopen(req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 156, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 469, in open
+    response = self._open(req, data)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 487, in _open
+    '_open', req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 447, in _call_chain
+    result = func(*args)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1268, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1251, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>
+2014-03-20 17:52:51 [weipai] [ERROR] [main.py:74] - error during get user videos: 530c62c58134946f369fd110
+Traceback (most recent call last):
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1248, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1061, in request
+    self._send_request(method, url, body, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1099, in _send_request
+    self.endheaders(body)
+  File "D:\Environment\Python33\lib\http\client.py", line 1057, in endheaders
+    self._send_output(message_body)
+  File "D:\Environment\Python33\lib\http\client.py", line 902, in _send_output
+    self.send(msg)
+  File "D:\Environment\Python33\lib\http\client.py", line 840, in send
+    self.connect()
+  File "D:\Environment\Python33\lib\http\client.py", line 818, in connect
+    self.timeout, self.source_address)
+  File "D:\Environment\Python33\lib\socket.py", line 435, in create_connection
+    raise err
+  File "D:\Environment\Python33\lib\socket.py", line 426, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 71, in main
+    capture(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 18, in capture
+    user = weipai_api.get_user_info(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\weipai_api.py", line 75, in get_user_info
+    resp = urllib.request.urlopen(req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 156, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 469, in open
+    response = self._open(req, data)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 487, in _open
+    '_open', req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 447, in _call_chain
+    result = func(*args)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1268, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1251, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>
+2014-03-20 17:52:57 [weipai] [ERROR] [main.py:74] - error during get user videos: 530831c6ebeddb57258b4668
+Traceback (most recent call last):
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1248, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1061, in request
+    self._send_request(method, url, body, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1099, in _send_request
+    self.endheaders(body)
+  File "D:\Environment\Python33\lib\http\client.py", line 1057, in endheaders
+    self._send_output(message_body)
+  File "D:\Environment\Python33\lib\http\client.py", line 902, in _send_output
+    self.send(msg)
+  File "D:\Environment\Python33\lib\http\client.py", line 840, in send
+    self.connect()
+  File "D:\Environment\Python33\lib\http\client.py", line 818, in connect
+    self.timeout, self.source_address)
+  File "D:\Environment\Python33\lib\socket.py", line 435, in create_connection
+    raise err
+  File "D:\Environment\Python33\lib\socket.py", line 426, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 71, in main
+    capture(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 18, in capture
+    user = weipai_api.get_user_info(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\weipai_api.py", line 75, in get_user_info
+    resp = urllib.request.urlopen(req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 156, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 469, in open
+    response = self._open(req, data)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 487, in _open
+    '_open', req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 447, in _call_chain
+    result = func(*args)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1268, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1251, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>
+2014-03-20 17:52:59 [weipai] [ERROR] [main.py:74] - error during get user videos: 52faec5f9d67d908528b456a
+Traceback (most recent call last):
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1248, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1061, in request
+    self._send_request(method, url, body, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1099, in _send_request
+    self.endheaders(body)
+  File "D:\Environment\Python33\lib\http\client.py", line 1057, in endheaders
+    self._send_output(message_body)
+  File "D:\Environment\Python33\lib\http\client.py", line 902, in _send_output
+    self.send(msg)
+  File "D:\Environment\Python33\lib\http\client.py", line 840, in send
+    self.connect()
+  File "D:\Environment\Python33\lib\http\client.py", line 818, in connect
+    self.timeout, self.source_address)
+  File "D:\Environment\Python33\lib\socket.py", line 435, in create_connection
+    raise err
+  File "D:\Environment\Python33\lib\socket.py", line 426, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 71, in main
+    capture(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 18, in capture
+    user = weipai_api.get_user_info(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\weipai_api.py", line 75, in get_user_info
+    resp = urllib.request.urlopen(req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 156, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 469, in open
+    response = self._open(req, data)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 487, in _open
+    '_open', req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 447, in _call_chain
+    result = func(*args)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1268, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1251, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>
+2014-03-20 17:53:00 [weipai] [ERROR] [main.py:74] - error during get user videos: 52ac9c4b504a13650b8b4596
+Traceback (most recent call last):
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1248, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1061, in request
+    self._send_request(method, url, body, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1099, in _send_request
+    self.endheaders(body)
+  File "D:\Environment\Python33\lib\http\client.py", line 1057, in endheaders
+    self._send_output(message_body)
+  File "D:\Environment\Python33\lib\http\client.py", line 902, in _send_output
+    self.send(msg)
+  File "D:\Environment\Python33\lib\http\client.py", line 840, in send
+    self.connect()
+  File "D:\Environment\Python33\lib\http\client.py", line 818, in connect
+    self.timeout, self.source_address)
+  File "D:\Environment\Python33\lib\socket.py", line 435, in create_connection
+    raise err
+  File "D:\Environment\Python33\lib\socket.py", line 426, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 71, in main
+    capture(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 18, in capture
+    user = weipai_api.get_user_info(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\weipai_api.py", line 75, in get_user_info
+    resp = urllib.request.urlopen(req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 156, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 469, in open
+    response = self._open(req, data)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 487, in _open
+    '_open', req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 447, in _call_chain
+    result = func(*args)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1268, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1251, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>
+2014-03-20 17:53:13 [weipai] [ERROR] [main.py:74] - error during get user videos: 530db0059d67d93f798b4567
+Traceback (most recent call last):
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1248, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1061, in request
+    self._send_request(method, url, body, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1099, in _send_request
+    self.endheaders(body)
+  File "D:\Environment\Python33\lib\http\client.py", line 1057, in endheaders
+    self._send_output(message_body)
+  File "D:\Environment\Python33\lib\http\client.py", line 902, in _send_output
+    self.send(msg)
+  File "D:\Environment\Python33\lib\http\client.py", line 840, in send
+    self.connect()
+  File "D:\Environment\Python33\lib\http\client.py", line 818, in connect
+    self.timeout, self.source_address)
+  File "D:\Environment\Python33\lib\socket.py", line 435, in create_connection
+    raise err
+  File "D:\Environment\Python33\lib\socket.py", line 426, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 71, in main
+    capture(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 18, in capture
+    user = weipai_api.get_user_info(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\weipai_api.py", line 75, in get_user_info
+    resp = urllib.request.urlopen(req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 156, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 469, in open
+    response = self._open(req, data)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 487, in _open
+    '_open', req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 447, in _call_chain
+    result = func(*args)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1268, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1251, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
+2014-03-20 17:53:15 [weipai] [ERROR] [main.py:74] - error during get user videos: 51f3e2997d34941f6c000028
+Traceback (most recent call last):
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1248, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1061, in request
+    self._send_request(method, url, body, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1099, in _send_request
+    self.endheaders(body)
+  File "D:\Environment\Python33\lib\http\client.py", line 1057, in endheaders
+    self._send_output(message_body)
+  File "D:\Environment\Python33\lib\http\client.py", line 902, in _send_output
+    self.send(msg)
+  File "D:\Environment\Python33\lib\http\client.py", line 840, in send
+    self.connect()
+  File "D:\Environment\Python33\lib\http\client.py", line 818, in connect
+    self.timeout, self.source_address)
+  File "D:\Environment\Python33\lib\socket.py", line 435, in create_connection
+    raise err
+  File "D:\Environment\Python33\lib\socket.py", line 426, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 71, in main
+    capture(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 18, in capture
+    user = weipai_api.get_user_info(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\weipai_api.py", line 75, in get_user_info
+    resp = urllib.request.urlopen(req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 156, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 469, in open
+    response = self._open(req, data)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 487, in _open
+    '_open', req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 447, in _call_chain
+    result = func(*args)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1268, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1251, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>
+2014-03-20 17:53:28 [weipai] [ERROR] [main.py:74] - error during get user videos: 530db9ebebeddbde408b45af
+Traceback (most recent call last):
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1248, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1061, in request
+    self._send_request(method, url, body, headers)
+  File "D:\Environment\Python33\lib\http\client.py", line 1099, in _send_request
+    self.endheaders(body)
+  File "D:\Environment\Python33\lib\http\client.py", line 1057, in endheaders
+    self._send_output(message_body)
+  File "D:\Environment\Python33\lib\http\client.py", line 902, in _send_output
+    self.send(msg)
+  File "D:\Environment\Python33\lib\http\client.py", line 840, in send
+    self.connect()
+  File "D:\Environment\Python33\lib\http\client.py", line 818, in connect
+    self.timeout, self.source_address)
+  File "D:\Environment\Python33\lib\socket.py", line 435, in create_connection
+    raise err
+  File "D:\Environment\Python33\lib\socket.py", line 426, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 71, in main
+    capture(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\main.py", line 18, in capture
+    user = weipai_api.get_user_info(user_id)
+  File "C:\Users\RileyRen\Desktop\weipai_capture\weipai_api.py", line 75, in get_user_info
+    resp = urllib.request.urlopen(req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 156, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 469, in open
+    response = self._open(req, data)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 487, in _open
+    '_open', req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 447, in _call_chain
+    result = func(*args)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1268, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "D:\Environment\Python33\lib\urllib\request.py", line 1251, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
+2014-03-20 17:53:58 [weipai] [INFO] [main.py:81] - end capture...
